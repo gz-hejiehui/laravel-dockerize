@@ -1,6 +1,7 @@
 {
-    "name": "hui-ho\/laravel-dockerize",
+    "name": "hui-ho/laravel-dockerize",
     "description": "Laravel local and production environment for Docker.",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -8,10 +9,22 @@
             "email": "hui-ho@outlook.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=7.0",
+        "illuminate/console": ">=5.5",
+        "illuminate/support": ">=5.5"
+    },
     "autoload": {
         "psr-4": {
             "HuiHo\\LaravelDockerize\\": "src"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HuiHo\\LaravelDockerize\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
 }
