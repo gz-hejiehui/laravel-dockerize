@@ -1,0 +1,17 @@
+{
+    "name": "hui-ho\/laravel-dockerize",
+    "description": "Laravel local and production environment for Docker.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hui-ho",
+            "email": "hui-ho@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "HuiHo\\LaravelDockerize\\": "src"
+        }
+    }
+}
